@@ -1,6 +1,13 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
+import M from 'materialize-css/dist/js/materialize.min.js';
 
 const Banner = () => {
+	const parallex = useRef(null);
+
+	useEffect(() => {
+		M.Parallax.init(parallex);
+	});
+
 	return (
 		<div className='parallax-container'>
 			<div className='section no-pad-bot'>
@@ -25,7 +32,7 @@ const Banner = () => {
 					</div>
 				</div>
 			</div>
-			<div className='parallax'>
+			<div className='parallax' ref={parallex}>
 				<img
 					id='banner-img'
 					src='https://images.unsplash.com/photo-1563121661-cd531f4fb8cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1480&q=80'
