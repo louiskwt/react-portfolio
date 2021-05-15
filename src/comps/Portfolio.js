@@ -6,7 +6,7 @@ const Portfolio = () => {
 			<h3 className='col s12 white-text center'>Portfolio</h3>
 			<div className='row'>
 				<div className='col s6 m4'>
-					<div className='card projects'>
+					<div className='card hoverable projects'>
 						<div className='card-image'>
 							<img
 								className='project-img responsive-img'
@@ -14,7 +14,7 @@ const Portfolio = () => {
 								alt='app'
 							/>
 							<a class='btn-floating halfway-fab waves-effect waves-light red'>
-								<i class='material-icons'>add</i>
+								<i class='material-icons'>code</i>
 							</a>
 						</div>
 						<div className='card-content'>
