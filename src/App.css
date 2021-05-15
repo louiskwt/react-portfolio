@@ -27,3 +27,7 @@
 	height: 200px;
 	margin-top: 5px;
 }
+
+#portfolio {
+	padding: 5rem, 5rem !important;
+}

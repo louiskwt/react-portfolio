@@ -5,6 +5,7 @@ import './App.css';
 import Navbar from './comps/Navbar';
 import Banner from './comps/Banner';
 import About from './comps/About';
+import Portfolio from './comps/Portfolio';
 
 const App = () => {
 	useEffect(() => {
@@ -16,6 +17,7 @@ const App = () => {
 			<Navbar />
 			<Banner />
 			<About />
+			<Portfolio />
 		</div>
 	);
 };

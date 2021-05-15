@@ -14,12 +14,10 @@ const Banner = () => {
 				<div className='container'>
 					<br />
 					<br />
-					<h1 className='header center white-text'>
-						Welcome to my Portfolio
-					</h1>
+					<h1 className='header center white-text'>Louis Tsang</h1>
 					<div className='row center'>
 						<h5 className='header col s12 white-text'>
-							This page showcases my web development projects
+							A web developer from Hong Kong
 						</h5>
 					</div>
 					<div className='row center'>
