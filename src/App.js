@@ -4,6 +4,7 @@ import M from 'materialize-css/dist/js/materialize.min.js';
 import './App.css';
 import Navbar from './comps/Navbar';
 import Banner from './comps/Banner';
+import About from './comps/About';
 
 const App = () => {
 	useEffect(() => {
@@ -14,6 +15,7 @@ const App = () => {
 		<div className='App'>
 			<Navbar />
 			<Banner />
+			<About />
 		</div>
 	);
 };
