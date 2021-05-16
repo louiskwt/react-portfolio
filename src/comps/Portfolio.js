@@ -1,27 +1,38 @@
 import React from 'react';
+import useFirestore from '../hooks/useFirestore';
 
 const Portfolio = () => {
+	const { docs } = useFirestore('projects');
+	console.log(docs);
 	return (
 		<div className='section grey darken-4' id='portfolio'>
 			<h3 className='col s12 white-text center'>Portfolio</h3>
 			<div className='row'>
-				<div className='col s6 m4'>
-					<div className='card hoverable projects'>
-						<div className='card-image'>
-							<img
-								className='project-img responsive-img'
-								src='https://images.unsplash.com/photo-1592609931095-54a2168ae893?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2250&q=80'
-								alt='app'
-							/>
-							<a class='btn-floating halfway-fab waves-effect waves-light red'>
-								<i class='material-icons'>code</i>
-							</a>
+				{docs &&
+					docs.map((doc) => (
+						<div className='col s6 m4' key={doc.id}>
+							<div className='card hoverable projects'>
+								<div className='card-image'>
+									<img
+										className='project-img responsive-img'
+										src={doc.img}
+										alt='app'
+									/>
+									<a
+										href={doc.link}
+										className='btn-floating halfway-fab waves-effect waves-light red'
+										target='_blank'
+										rel='noreferrer'
+									>
+										<i className='material-icons'>code</i>
+									</a>
+								</div>
+								<div className='card-content center'>
+									<p className='project-title'>{doc.name}</p>
+								</div>
+							</div>
 						</div>
-						<div className='card-content'>
-							<p>This is a project</p>
-						</div>
-					</div>
-				</div>
+					))}
 			</div>
 		</div>
 	);

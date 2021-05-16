@@ -20,12 +20,20 @@ const Banner = () => {
 							A web developer from Hong Kong
 						</h5>
 					</div>
-					<div className='row center'>
+					<div className='row center hide-on-med-and-up'>
 						<a
 							href='#about'
-							className='btn-large waves-effect waves-light blue'
+							className='btn waves-effect waves-light blue darken-1'
 						>
-							Learn more about Me
+							About Me
+						</a>
+						<br />
+						<br />
+						<a
+							href='#portfolio'
+							className='btn waves-effect waves-light blue darken-1'
+						>
+							Portfolio
 						</a>
 					</div>
 				</div>

@@ -4,12 +4,12 @@ const Dropdown = () => {
 	return (
 		<ul id='dropdown1' className='dropdown-content'>
 			<li>
-				<a href='#!' className='black-text nav-link'>
+				<a href='#about' className='black-text nav-link'>
 					About
 				</a>
 			</li>
 			<li>
-				<a href='#!' className='black-text nav-link'>
+				<a href='#portfolio' className='black-text nav-link'>
 					Portfolio
 				</a>
 			</li>
