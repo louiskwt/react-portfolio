@@ -6,6 +6,7 @@ import Navbar from './comps/Navbar';
 import Banner from './comps/Banner';
 import About from './comps/About';
 import Portfolio from './comps/Portfolio';
+import Footer from './comps/Footer';
 
 const App = () => {
 	useEffect(() => {
@@ -18,6 +19,7 @@ const App = () => {
 			<Banner />
 			<About />
 			<Portfolio />
+			<Footer />
 		</div>
 	);
 };
