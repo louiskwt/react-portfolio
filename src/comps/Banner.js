@@ -43,7 +43,7 @@ const Banner = () => {
 					<div className='row center'>
 						<h5 className='white-text'>
 							{`${word[index].substring(0, subIndex)}${
-								blink ? '|' : ''
+								blink ? '|' : '​'
 							}`}
 						</h5>
 					</div>

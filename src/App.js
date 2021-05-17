@@ -7,6 +7,7 @@ import Banner from './comps/Banner';
 import About from './comps/About';
 import Portfolio from './comps/Portfolio';
 import Footer from './comps/Footer';
+import ActionBtn from './comps/ActionBtn';
 
 const App = () => {
 	useEffect(() => {
@@ -20,6 +21,7 @@ const App = () => {
 			<About />
 			<Portfolio />
 			<Footer />
+			<ActionBtn />
 		</div>
 	);
 };
