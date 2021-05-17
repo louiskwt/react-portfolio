@@ -2,6 +2,7 @@ html {
 	scroll-behavior: smooth;
 }
 
+/* Navbar style */
 .icon {
 	margin-left: 1em;
 	font-size: 2.1rem !important;
@@ -24,20 +25,28 @@ html {
 	}
 }
 
+/* Banner style */
+
 #banner-img {
 	max-width: 100%;
 	min-height: 100%;
-	filter: grayscale(50%);
+	height: 100% !important;
+	position: absolute;
+	transform: translate3d(-50%, 134.783px, 0px);
+	opacity: 1;
 }
 
 #shade {
 	width: 100%;
 	min-height: 100%;
-	background: rgba(0, 0, 0, 0.5);
+	background: rgba(0, 0, 0, 0.6);
 	position: absolute;
 	top: 0;
 	left: 0;
+	z-index: 1;
 }
+
+/* About me style */
 
 #profile {
 	width: 200px;
@@ -45,6 +54,46 @@ html {
 	margin-top: 5px;
 }
 
+.about-text {
+	font-size: 1.2rem;
+	margin-top: 15px !important;
+	color: black;
+}
+
+.story {
+	margin-top: 25px !important;
+}
+
+/* Portfolio style */
+.project-title {
+	font-size: 1.5rem;
+}
+
+.project-link a {
+	margin-left: 15px !important;
+	margin-right: 15px !important;
+}
+
+.code-block {
+	color: white !important;
+	transition: color 0.5s ease-in-out;
+	font-size: 1.5rem;
+}
+
+.project-title:hover .code-block {
+	color: black !important;
+}
+
 #portfolio {
 	padding: 5rem, 5rem !important;
+}
+
+/* Footer style */
+#social-link {
+	margin-top: 15px !important;
+}
+
+#social-link a {
+	margin-left: 30px !important;
+	margin-right: 30px !important;
 }
