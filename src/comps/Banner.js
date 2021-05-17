@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import M from 'materialize-css/dist/js/materialize.min.js';
-const word = ['A web developer from Hong Kong '];
+const word = ['A web developer from Hong Kong'];
 
 const Banner = () => {
 	const parallex = useRef(null);
@@ -41,9 +41,9 @@ const Banner = () => {
 					<br />
 					<h1 className='header center white-text'>Louis Tsang</h1>
 					<div className='row center'>
-						<h5 className='header col s12 white-text'>
+						<h5 className='white-text'>
 							{`${word[index].substring(0, subIndex)}${
-								blink ? '|' : ' '
+								blink ? '|' : ''
 							}`}
 						</h5>
 					</div>
