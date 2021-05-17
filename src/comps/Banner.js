@@ -1,12 +1,37 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import M from 'materialize-css/dist/js/materialize.min.js';
+const word = ['A web developer from Hong Kong '];
 
 const Banner = () => {
 	const parallex = useRef(null);
-
 	useEffect(() => {
 		M.Parallax.init(parallex);
 	});
+	// Typing effect
+	const [index, setIndex] = useState(0);
+	const [subIndex, setSubIndex] = useState(0);
+	const [blink, setBlink] = useState(true);
+
+	useEffect(() => {
+		if (index === word.length) return;
+		if (subIndex === word[index].length + 1 && index !== word.length - 1) {
+			setIndex(0);
+			return;
+		}
+
+		const timeout = setTimeout(() => {
+			setSubIndex((prev) => prev + 1);
+		}, 100);
+		return () => clearTimeout(timeout);
+	}, [subIndex, index]);
+
+	// Blinker
+	useEffect(() => {
+		const timeout2 = setTimeout(() => {
+			setBlink((prev) => !prev);
+		}, 350);
+		return () => clearTimeout(timeout2);
+	}, [blink]);
 
 	return (
 		<div className='parallax-container'>
@@ -17,7 +42,9 @@ const Banner = () => {
 					<h1 className='header center white-text'>Louis Tsang</h1>
 					<div className='row center'>
 						<h5 className='header col s12 white-text'>
-							A web developer from Hong Kong
+							{`${word[index].substring(0, subIndex)}${
+								blink ? '|' : ' '
+							}`}
 						</h5>
 					</div>
 					<div className='row center hide-on-med-and-up'>

@@ -23,7 +23,7 @@ const About = () => {
 							<div className='row'>
 								<p class='col s10 about-text'>
 									Web Developer (React, NodeJS, Express,
-									MongoDB, and Firebase)
+									MongoDB, and Python)
 									<br />
 									<br />
 									Based in Hong Kong 🇭🇰
@@ -39,13 +39,15 @@ const About = () => {
 								<p class='col s10 about-text'>
 									In order to help my students learn English
 									and make my teaching more engaging, I taught
-									myself how to code and create websites by
-									using online resoureces.
+									myself how to code through online resoureces
+									and created several web apps for myself and
+									my students
 									<br />
 									<br />
-									Now, I'm building web applications that can
-									enrich students' learning experience and
-									improve teachers' teaching experience.
+									Now, I'm building several full-fledged web
+									applications that can enrich students'
+									learning experience and improve teachers'
+									teaching experience.
 								</p>
 							</div>
 						</div>
