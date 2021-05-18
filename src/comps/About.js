@@ -1,5 +1,4 @@
 import React from 'react';
-import profile from '../profile.jpg';
 
 const About = () => {
 	return (
@@ -11,7 +10,7 @@ const About = () => {
 					<div className='card white'>
 						<div className='card-img center'>
 							<img
-								src={profile}
+								src='https://firebasestorage.googleapis.com/v0/b/portfolio-20478.appspot.com/o/profile.jpg?alt=media&token=5db9093f-ccac-4303-b191-35be2926d658'
 								alt='profile'
 								className='circle responsive-img'
 								id='profile'
