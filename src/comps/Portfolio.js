@@ -14,11 +14,7 @@ const Portfolio = () => {
 							<div className='col s6 m4' key={doc.id}>
 								<div className='card hoverable projects'>
 									<div className='card-image'>
-										<img
-											className='project-img responsive-img'
-											src={doc.img}
-											alt='app'
-										/>
+										<img src={doc.img} alt='app' />
 										<span className='btn-floating halfway-fab waves-effect waves-light activator red'>
 											<i className='material-icons'>
 												more_horiz

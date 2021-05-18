@@ -91,6 +91,10 @@ html {
 	padding: 5rem, 5rem !important;
 }
 
+.card .card-image img {
+	height: 150px !important;
+}
+
 /* Footer style */
 #social-link {
 	margin-top: 15px !important;
