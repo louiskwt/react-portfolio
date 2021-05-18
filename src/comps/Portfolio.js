@@ -3,7 +3,7 @@ import useFirestore from '../hooks/useFirestore';
 
 const Portfolio = () => {
 	const { docs } = useFirestore('projects');
-	console.log(docs);
+
 	return (
 		<div className='section grey darken-4' id='portfolio'>
 			<h3 className='col s12 white-text center'>Portfolio</h3>
