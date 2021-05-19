@@ -6,7 +6,10 @@ const Footer = () => {
 			<div className='container'>
 				<div className='row'>
 					<div className='col s12'>
-						<h3 className='grey-text text-darken-4'>
+						<h3
+							className='grey-text text-darken-4'
+							id='footer-title'
+						>
 							Don't be a stranger!
 						</h3>
 						<div className='divider'></div>

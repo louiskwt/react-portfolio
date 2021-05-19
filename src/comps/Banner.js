@@ -41,7 +41,7 @@ const Banner = () => {
 					<br />
 					<h1 className='header center white-text'>Louis Tsang</h1>
 					<div className='row center'>
-						<h5 className='white-text'>
+						<h5 className='white-text' id='banner-text'>
 							{`${word[index].substring(0, subIndex)}${
 								blink ? '|' : '​'
 							}`}

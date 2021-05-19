@@ -36,6 +36,12 @@ html {
 	opacity: 1;
 }
 
+@media only screen and (max-width: 600px) {
+	#banner-text {
+		font-size: 1.2rem;
+	}
+}
+
 #shade {
 	width: 100%;
 	min-height: 100%;
@@ -46,14 +52,11 @@ html {
 	z-index: 1;
 }
 
-#blinker {
-}
-
 /* About me style */
 
 #profile {
-	width: 200px;
-	height: 200px;
+	width: 200px !important;
+	height: 200px !important;
 	margin-top: 5px;
 }
 
@@ -70,6 +73,12 @@ html {
 /* Portfolio style */
 .project-title {
 	font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 600px) {
+	.project-title {
+		font-size: 1rem;
+	}
 }
 
 .project-link a {
@@ -96,6 +105,12 @@ html {
 }
 
 /* Footer style */
+
+@media only screen and (max-width: 600px) {
+	#footer-title {
+		font-size: 1rem;
+	}
+}
 #social-link {
 	margin-top: 15px !important;
 }

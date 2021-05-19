@@ -16,9 +16,7 @@ const Portfolio = () => {
 									<div className='card-image'>
 										<img src={doc.img} alt='app' />
 										<span className='btn-floating halfway-fab waves-effect waves-light activator red'>
-											<i className='material-icons'>
-												more_horiz
-											</i>
+											<i class='fas fa-ellipsis-h'></i>
 										</span>
 									</div>
 									<div className='card-content center'>
@@ -41,9 +39,7 @@ const Portfolio = () => {
 									<div className='card-reveal'>
 										<span className='card-title grey-text text-darken-4'>
 											{doc.name}{' '}
-											<i className='material-icons right'>
-												close
-											</i>
+											<i class='fas fa-times right'></i>
 										</span>
 										<p className='project-description'>
 											{doc.description}
