@@ -12,6 +12,8 @@ const About = () => {
 							<img
 								src='https://firebasestorage.googleapis.com/v0/b/portfolio-20478.appspot.com/o/profile.jpg?alt=media&token=5db9093f-ccac-4303-b191-35be2926d658'
 								alt='profile'
+								width='150'
+								height='180'
 								className='circle responsive-img'
 								id='profile'
 							/>
